@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_camellia.mk
+    $(LOCAL_DIR)/komodo_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_camellia-user \
-    banana_camellia-userdebug \
-    banana_camellia-eng
+    komodo_camellia-user \
+    komodo_camellia-userdebug \
+    komodo_camellia-eng

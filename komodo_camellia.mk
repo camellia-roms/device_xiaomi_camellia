@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Pixel Experience stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/komodo/config/common.mk)
 
 # Inherit from camellia device
 $(call inherit-product, device/xiaomi/camellia/device.mk)
@@ -18,15 +18,16 @@ $(call inherit-product, device/xiaomi/camellia/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_FACE_UNLOCK := true
 IS_PHONE := true
-GAPPS_VERSION := false
-BANANA_BUILD_TYPE := OFFICIAL
-BANANA_MAINTAINER := skittels15
-TARGET_ENABLE_BLUR := true
+
+# Komodo Stuff
+KOMODO_OFFICIAL := true
+KOMODO_GAPPS_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := banana_camellia
+PRODUCT_NAME := komodo_camellia
 PRODUCT_DEVICE := camellia
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_BRAND := Redmi
